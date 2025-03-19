@@ -3,5 +3,7 @@ Data on Absenteeism at a Brazilian courrier company was collected from UCI ML Re
 
 The dataset showed some interesting trends that went against common knowledge. For example, absenteeism was not found to be strongly correlated with workload; on the contrary, there were numerous datapoints where the employee had high workload but showed absenteeist behavior nevertheless. High school graduates dominate the dataset while Masters and Doctorate graduates are under-represented; this is not surprising since courrier companies typically do not require advanced degrees. One would expect commute expense and distance to have a strong correlation with absenteeism, but none is observed in the data. All in all, no clear trends are observed in the dataset. This implies that the dataset that does not capture all the factors that might lead to absenteeism.  
 
+Hierarchical clustering and DBSCAN models did not succeed in identifying any clear relations among the data points. While hierarchical clustering fared slightly better than DBSCAN, there was still significant overlap among clusters and large intra-cluster distance between the datapoints. It's possible that my choice of the distance metric was not appropriate, or there simply may not be any intrinsic relationship between the datapoints in this dataset. In any case, dimensionality reduction by PCA substantially improved the segregation between the clusters, though it was not able to reduce the intra-cluster distance of the datapoints. 
+
 
 
